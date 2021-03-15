@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "ResponseTimeTester", "ResponseTimeTester\ResponseTimeTester.cproj", "{A64FC18C-5777-4FAB-B7FC-02C8D17CEC21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A64FC18C-5777-4FAB-B7FC-02C8D17CEC21}.Debug|AVR.ActiveCfg = Debug|AVR
+		{A64FC18C-5777-4FAB-B7FC-02C8D17CEC21}.Debug|AVR.Build.0 = Debug|AVR
+		{A64FC18C-5777-4FAB-B7FC-02C8D17CEC21}.Release|AVR.ActiveCfg = Release|AVR
+		{A64FC18C-5777-4FAB-B7FC-02C8D17CEC21}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
