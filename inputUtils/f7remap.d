@@ -11,17 +11,19 @@ enum Scancode : ushort {
 }
 
 enum Action {
-    xmove,
+    move,
     click,
 }
 
 void main(string[] args){
     Action action;
-    int xmoveAmount = 200;
+    int x = 200;
+    int y = 0;
     ushort remapSourceScancode = Scancode.F7;
     getopt(args,
         "a|action", &action,
-        "x",        &xmoveAmount,
+        "x",        &x,
+        "y",        &y,
         "s|source", &remapSourceScancode,
     );
 
@@ -59,10 +61,11 @@ void main(string[] args){
                         };
                         mouse.write(click);
                         break;
-                    case xmove:
+                    case move:
                         MouseStroke move = {
                             settings:   MouseSettings(MSt.moveRelative),
-                            x:          (e.stroke.state == KeyboardState(KS.down)) ? -xmoveAmount : xmoveAmount,
+                            x:          (e.stroke.state == KeyboardState(KS.down)) ? -x : x,
+                            y:          (e.stroke.state == KeyboardState(KS.down)) ? -y : y,
                         };
                         mouse.write(move);
                         break;
