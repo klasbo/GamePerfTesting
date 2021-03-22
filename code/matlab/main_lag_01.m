@@ -146,14 +146,14 @@ lagData.plotMaxLimit({...
 
 %%
 f = figure; clf;
-name = 'GPU limited - Nvidia Reflex';
+f.Name = 'GPU limited - Nvidia Reflex';
 lagData.plotMaxLimit({...
         'Nvidia reflex'         []
         'Hardware FPS limit'    'GPU' 
         'Hardware max FPS'      []
         'Render scale'          '200%'
     }, ...
-    'title',name, 'minmax',false, 'xlim',xlim);
+    'title',f.Name, 'minmax',false, 'xlim',xlim);
 
 
 %%
